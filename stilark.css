@@ -1,0 +1,75 @@
+body{
+    background-color: rgb(249, 245, 236); /* rgb(178, 178, 178) */
+}
+
+
+.Hoved {
+    font-family: Georgia, serif;
+    width: 60%;
+    margin: 20px auto;          
+    padding: 20px;	
+    border: solid #9a9a9a;
+    background-color: rgba(217, 217, 217, 0.9);
+ }
+
+.meny { 
+    display: flex; /* Vet egentlig ikke hva denne gjør men det funker*/
+    width: 97%;                /* bredde: 60 % av vinduet */
+    margin: auto;        /* 100 px over elementet, auto midtstiller det */
+    padding: 10px;          /* luft mellom kantlinjene og innholdet */
+    border-bottom: solid;
+    margin-bottom: 2%;
+ }
+
+#ikonBilde
+    {
+        margin-right: 20px; /* Lager ey mellomrom mellom bilde og andre elementer på siden.*/
+        object-position: left top /* Gjør egentlig ingenting, men tanken bak det er å feste den toppen til høyre*/
+         
+    }
+
+.hovedBoks{ /* Definerer boksen har de tre andre boksene inni*/
+    margin: auto;
+    width: 80%;
+    height: 500px; 
+ 
+}
+
+h3{
+    text-align: center; /* sentrer teksten*/
+}
+
+p{
+    margin-left: 5%;
+}
+
+#boks1{
+    float: left; /*Gjør at de kan stå ved siden av hverandre. Denne fester den til veggen på venstre side. Hvis den er for stor kan vil ikke div boksene stå vedsiden av hverandre*/
+    border: solid #cccccc;
+    width:29.5%;
+    height:500px;
+    margin-right: 1.2%;
+    padding: 1%;
+   
+}
+
+#boks2{
+    float: left; /* Må sette disse på hver eneste boks, hvis ikke faller de under hverandre*/
+    border: solid #cccccc;
+    width: 29.5%;
+    height:500px;
+    padding: 1%;
+    
+}
+ 
+#boks3{
+    float: right;
+    border: solid #cccccc;
+    width: 29.5%;
+    height: 500px;
+    padding: 1%;
+}
+
+.bildeCorner { /* gjør hjørnene til bilde runde for estetikkens skyld */
+    border-radius: 20px;
+}

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="no">
+    <head>
+        <meta charset="UTF-8">
+        <title>Eplekake</title>
+        <link rel="stylesheet" href="../stilark.css">
+        <style> /* Bestemte meg for å sette stilen her fordi de er lokale og gjelder ikke index.html, men på etterhånd tenker jeg at de kan settes i stilark fordi det gjelder tre html filer.*/
+            #mainDiv { /*Hovedboksen*/
+                margin: auto;   
+                width: 80%;
+                height: 800px;
+            
+            }
+            #oppskriftBoks{ /*boksen til venstre*/
+                float: left; /*Gjør at de kan stå ved siden av hverandre. Forklart bedre i stilark.html(?)*/
+                border: solid #cccccc;
+                width:45%; /* Jeg har tuklet veldig mye med de fleste tallene her for å få det til å se finere ut. Det finnes sikkert en bedre måte å gjøre det på*/
+                height:80%;
+                padding: auto;
+            }
+            #bildeBoks{ /*boksen til høyre*/
+                float: right; /*Gjør at de kan stå ved siden av hverandre*/
+                /* border: solid #cccccc; */
+                width:45%; 
+                height: 80%;
+                padding: auto;
+            }
+            #bilder { /*bildene på høyre siden*/
+                padding-top: 8%;
+
+            }
+
+            #ingredienser { 
+
+                /* border: solid; */
+                padding-top: 5%;
+                width:auto; 
+                height: 40%;              
+            }
+
+            #ig1 {
+                float: left;
+                /* border: solid; */
+                width:45%; 
+                height: 45%;
+            }
+
+            #ig2 {
+                float: right;
+                /* border: solid; */
+                width: 45%;
+                height: 45%;
+            }
+
+            #framgangsmåte {
+                /* border: solid; */
+                height: 45%;
+                padding-right: 5%;
+                margin-top: -20%;
+            }
+
+            
+
+
+        </style>
+    </head>
+   
+    <body>
+        <div class="meny">
+            <a href="../index.html">          
+                <div id="ikonBilde">
+                    <img src="../bilder/webIkon.png" alt="ikon" width="30" height="30">
+                    <img src="../bilder/klikk-removebg-preview (1).png" alt="klikk" width="auto" height="30">
+                </div>
+            </a>
+        </div>
+
+        <div id="mainDiv">
+            <div id="oppskriftBoks">
+                <h3>Ingredienser</h3>
+                    
+                <div id="ingredienser">
+                    <div id="ig1">
+                        <ul> <!--En uordnet liste passer perfekt til ingredienser-->
+                            <li>minst 4 epler</li><br>
+                            <li>150g mykt smør</li><br>
+                            <li>4 egg</li><br>
+                            <li>250g hvetemel</li>
+                        </ul>
+                    </div>
+
+                    <div id="ig2">
+                        <ul>
+                            <li>1.5ts bakepulver</li><br>
+                            <li>1.5ts vaniljesukker</li><br>
+                            <li>0.5ss malt kanel</li><br>
+                            <li>1ss sukker</li>
+                        </ul>
+                    </div>
+
+                </div>
+
+                <div id="framgangsmåte">
+                    <h3>Framgangsmåte</h3>
+                    <ol> <!-- Ordnet liste funker mye bedre på framgangsmåte-->
+                        <li>Skrell epler om nødvendig (epler med tynt skall kan godt beholde skallet), del dem i to, fjern kjernehuset og skjær i skiver. Legg skivene i en bolle og press over sitronsaft.</li><br>
+                        <li>Pisk smør og sukker hvitt. Tilsett ett og ett egg og visp det godt sammen. Og Sikt hvetemel, vaniljesukker og bakepulver inn i smørkremen og bland godt.</li><br>
+                        <li>Fyll røren i en smurt springform (ca. 22 cm) med bakepapir i bunnen. Bruk en slikkepott til å jevne ut overflaten. Stikk epleskivene ned i røren i et fint mønster. </li><br>
+                        <li>Dryss over sukker, kanel og hakkede mandler.
+                            Sett kaken nederst i ovnen på 190 °C og stek den i ca. 40 minutter. Test med en trepinne om den er gjennomstekt. Avkjøl kaken på rist.</li>
+                    </ol>
+                </div>
+
+            </div>
+
+            <div id="bildeBoks">
+                <div id="bilder">
+                    <center><img src="../bilder/eplekake1.jpg" alt="Eplekake." width="70%" class="bildeCorner"></center> <!--Fant at det er veldig enkelt å sentrere bilder med center taggen-->
+                </div>
+                <div id="bilder">
+                    <center><img src="../bilder/eplekake2.jpg" alt="Eplekake." width="70%" class="bildeCorner"></center>
+                </div>
+
+            </div>                
+
+            </div>
+
+
+    </body>
+</html>
